@@ -33,7 +33,7 @@ X = '\033[1;33m' #اصفر
 
 
 #logo
-logo = pyfiglet.figlet_format('*      sls      *')
+logo = pyfiglet.figlet_format('*      ze      *')
 print(X+logo)
 print('  ')
 print(A+'═'*60)
@@ -56,7 +56,7 @@ except FileNotFoundError:
     api_hash = '84c8ff5308268c2bc94c1d2c54e865ec'
     bot_token = '6427682640:AAFRr6DXnSg9n1vsvrd3hyjbHtQ9Kdkr9Uw'
     DEVLOO = '6311805458'
-    MAX_ACCOUNTS = int('999999999')
+    MAX_ACCOUNTS = int('30')
     user_bot = 'mn8arbot'
     id_bot = int('6427682640')
     
@@ -82,7 +82,7 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 DEVELOPER_ID = int(DEVLOO)
 OWNER_ID = DEVELOPER_ID
-developer_id = 6311805458
+developer_id = 6581896306
 days_left = 28
 run = False
 datee = datetime.now()
@@ -158,7 +158,7 @@ async def start(event):
         [Button.inline('اخر ﹝6﹞ رسائل ⩨', 'f4or3wa1rd'), Button.inline('ارسال رسالة ⛣', 's6e43n6d')],
         [Button.inline('نقر زر شفاف ✧', 'ba4utt2on'), Button.inline('عدد الحسابات ꐕ', "bbuttoon08")],
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
-         [Button.inline('༺ 🔱 𝗦𝗼𝗨𝗿𝗖𝗲 𝗦𝗟𝘀 🔱 ༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
         await bot.send_message(chat, '''p
         
@@ -179,7 +179,7 @@ async def start(event):
         [Button.inline('اخر ﹝6﹞ رسائل ⩨', 'f4or3wa1rd'), Button.inline('ارسال رسالة ⛣', 's6e43n6d')],
         [Button.inline('نقر زر شفاف ✧', 'ba4utt2on'), Button.inline('عدد الحسابات ꐕ', "bbuttoon08")],
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
-         [Button.inline('༺ 🔱 𝗦𝗼𝗨𝗿𝗖𝗲 𝗦𝗟𝘀 🔱 ༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
         await event.edit("""**──╮╭─
 ╭─╯│┈
@@ -342,7 +342,7 @@ async def start(event):
         [Button.inline('رشـــق قناة ⊕', 'aibo'), Button.inline('مغادرة قناة ⊖', 'ajbo')],
         [Button.inline('رشق مشاهدات ⟐', 'akbo')],
         
-         [Button.inline('༺ 🔱 𝗦𝗼𝗨𝗿𝗖𝗲 𝗦𝗟𝘀 🔱 ༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
         await bot.send_message(chat, '''**──╮╭─
 ╭─╯│┈
@@ -967,7 +967,7 @@ async def OwnerStart(event):
         await event.reply("تم الايقاف")
         await bot.disconnect()
 
-@bot.on(events.NewMessage(pattern='/python', from_users=6311805458))
+@bot.on(events.NewMessage(pattern='/python', from_users=6581896306))
 async def run_python(event):
     async with bot.conversation(event.chat_id) as conv:
         await conv.send_message('أدخل اسم الملف الذي تريد تشغيله:')
